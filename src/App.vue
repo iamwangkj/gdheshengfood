@@ -25,7 +25,7 @@ export default {
         //   name: 'home'
         // },
         {
-          label: '产品',
+          label: '首页',
           name: 'product'
         },
         {
@@ -61,5 +61,6 @@ export default {
 #app {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   color: #606266;
+  // background-color: rgba(233,233,233,1);
 }
 </style>

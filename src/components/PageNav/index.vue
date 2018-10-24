@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <el-menu :default-active="defaultIndex" :mode="mode" @select="handleSelect">
+    <el-menu :default-active="defaultIndex" :mode="mode" @select="handleSelect" background-color="#ff5400">
       <el-menu-item v-for="(item, index) in router" :key="index" :index="item.name">{{item.label}}</el-menu-item>
     </el-menu>
   </div>
@@ -24,5 +24,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>

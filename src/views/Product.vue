@@ -2,7 +2,7 @@
   <div class="product">
     <el-carousel :interval="4000" type="card">
       <el-carousel-item v-for="item in 4" :key="item">
-        <img width="800" height="300" src="http://img.zcool.cn/community/014bc159770a29a8012193a3a295b0.jpg@2o.jpg" alt="">
+        <img width="800" height="300" src="/imgs/slider.jpg" alt="">
       </el-carousel-item>
     </el-carousel>
 

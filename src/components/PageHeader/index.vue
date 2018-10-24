@@ -18,8 +18,10 @@ export default {
 .header{
   width: 100%;
   height: 60px;
-  background-color: #5f4b8b;
+  background-color: #ff4500;
   color: #fff;
+  /* box-shadow: 0 2px 10px #606266; */
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

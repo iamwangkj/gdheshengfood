@@ -16,7 +16,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .wrapper{
-  width: 1100px;
+  width: 1200px;
   /* background-color: #FFFFCC; */
   margin: 0 auto;
 }

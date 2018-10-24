@@ -36,7 +36,7 @@ export default {
 .productItemLabel{
   width: 150px;
   text-align: center;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #E5CB96;
   padding: 1rem;
 }
 .productItem:hover{
