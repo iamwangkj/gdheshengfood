@@ -1,53 +1,34 @@
 <template>
   <div id="app">
-    <PageHeader></PageHeader>
-    <Nav :router="router" mode="horizontal" :defaultIndex="router[0].name"></Nav>
-    <PageMain>
-      <router-view></router-view>
-    </PageMain>
+    <Slider></Slider>
+    <NavBar></NavBar>
     <PageFooter></PageFooter>
   </div>
 </template>
 
 <script>
-import PageHeader from './components/PageHeader'
+import Slider from './components/Slider'
 import PageFooter from './components/PageFooter'
-import PageMain from './components/PageMain'
-import Nav from './components/PageNav'
+import NavBar from './components/NavBar'
+import _ from 'lodash'
 
 export default {
   name: 'App',
   data () {
-    return {
-      router: [
-        // {
-        //   label: '首页',
-        //   name: 'home'
-        // },
-        {
-          label: '首页',
-          name: 'product'
-        },
-        {
-          label: '人才招聘',
-          name: 'recruit'
-        },
-        {
-          label: '关于我们',
-          name: 'about'
-        },
-        {
-          label: '联系我们',
-          name: 'contact'
-        }
-      ]
-    }
+    return {}
+  },
+  mounted () {
+    window.onresize = _.debounce(function () {
+      const deviceWidth = document.documentElement.clientWidth
+      const defaultFontSize = 16
+      document.documentElement.style.fontSize = (deviceWidth / 1920 * defaultFontSize) + 'px'
+      console.warn(document.documentElement.style.fontSize)
+    }, 50)
   },
   components: {
-    PageHeader,
-    PageFooter,
-    PageMain,
-    Nav
+    Slider,
+    NavBar,
+    PageFooter
   }
 }
 </script>
@@ -61,6 +42,6 @@ export default {
 #app {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   color: #606266;
-  // background-color: rgba(233,233,233,1);
+  width: 100%;
 }
 </style>
