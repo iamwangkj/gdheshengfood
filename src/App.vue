@@ -2,6 +2,8 @@
   <div id="app">
     <Slider></Slider>
     <NavBar></NavBar>
+    <LogoGreen></LogoGreen>
+    <router-view></router-view>
     <PageFooter></PageFooter>
   </div>
 </template>
@@ -10,6 +12,7 @@
 import Slider from './components/Slider'
 import PageFooter from './components/PageFooter'
 import NavBar from './components/NavBar'
+import LogoGreen from './components/LogoGreen'
 import _ from 'lodash'
 
 export default {
@@ -22,13 +25,13 @@ export default {
       const deviceWidth = document.documentElement.clientWidth
       const defaultFontSize = 16
       document.documentElement.style.fontSize = (deviceWidth / 1920 * defaultFontSize) + 'px'
-      console.warn(document.documentElement.style.fontSize)
     }, 50)
   },
   components: {
     Slider,
     NavBar,
-    PageFooter
+    PageFooter,
+    LogoGreen
   }
 }
 </script>

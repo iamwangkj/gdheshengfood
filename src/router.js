@@ -17,9 +17,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/recruit',
-      name: 'recruit',
-      component: Recruit
+      path: '/home',
+      name: 'home',
+      component: Home
     },
     {
       path: '/about',
@@ -30,6 +30,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/recruit',
+      name: 'recruit',
+      component: Recruit
     }
   ]
 })
